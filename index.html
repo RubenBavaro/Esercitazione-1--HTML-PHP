@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>User Form</title>
+</head>
+<body>
+<div id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <fieldset>
+                <legend><h1 class="title">Modulo di rivelazione temperatura</h1></legend>
+                <form action="/action_page.php" method="post">
+                    <div class="form-group">
+                        <label for="loc">Località:</label>
+                        <input type="text" class="form-control" id="loc" name="loc">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Data:</label>
+                        <input type="date" class="form-control" id="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Ora:</label>
+                        <input type="time" class="form-control" id="time" name="time">
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo Rivelazione:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="type_s" name="type" value="s">
+                            <label class="form-check-label" for="type_s">OFC</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="type_a" name="type" value="a">
+                            <label class="form-check-label" for="type_a">AMB</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="type_r" name="type" value="r">
+                            <label class="form-check-label" for="type_r">DRA</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="humidity">Umidità:</label>
+                        <select class="form-control" id="humidity" name="humidity">
+                            <option value="assoluta">Assoluta</option>
+                            <option value="relativa">Relativa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="climate">Clima Attuale:</label>
+                        <select class="form-control" id="climate" name="climate">
+                            <option value="pioggia">Pioggia</option>
+                            <option value="sole">Sole</option>
+                            <option value="nuvoloso">Nuvoloso</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="altitude">Altitudine:</label>
+                        <input type="number" class="form-control" id="altitude" name="altitude">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia Rivelazione</button>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>            
+</div>
+</body> 
+</html>
