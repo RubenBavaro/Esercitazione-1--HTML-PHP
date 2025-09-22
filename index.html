@@ -14,7 +14,7 @@
             <div class="col-8 offset-2">
                 <fieldset>
                 <legend><h1 class="title">Modulo di rivelazione temperatura</h1></legend>
-                <form action="/action_page.php" method="post">
+                <form action="static/php/index.php" method="post">
                     <div class="form-group">
                         <label for="loc">Località:</label>
                         <input type="text" class="form-control" id="loc" name="loc">
@@ -45,19 +45,21 @@
                     <div class="form-group">
                         <label for="humidity">Umidità:</label>
                         <select class="form-control" id="humidity" name="humidity">
-                            <option value="assoluta">Assoluta</option>
-                            <option value="relativa">Relativa</option>
+                            <option value="assoluta">ASSOLUTA</option>
+                            <option value="relativa">RELATIVA</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="climate">Clima Attuale:</label>
                         <select class="form-control" id="climate" name="climate">
-                            <option value="pioggia">Pioggia</option>
-                            <option value="sole">Sole</option>
-                            <option value="nuvoloso">Nuvoloso</option>
+                            <option value="pioggia">PIOGGIA</option>
+                            <option value="sereno">SERENO</option>
+                            <option value="ventoso">VENTOSO</option>
+                            <option value="umido">UMIDO</option>
+                            <option value="foschia">FOSCHIA</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group">    
                         <label for="altitude">Altitudine:</label>
                         <input type="number" class="form-control" id="altitude" name="altitude">
                     </div>
@@ -68,5 +70,10 @@
         </div>
     </div>            
 </div>
+
+<script src="static/js/index.js"></script>
+
+
+
 </body> 
 </html>
